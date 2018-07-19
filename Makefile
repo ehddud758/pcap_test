@@ -1,7 +1,7 @@
 all : pcap_test
 
 pcap_test: main.o
-	gcc -g -o pcap_test main.o -lpcap -I/usr/include/pcap
+	gcc -g -o pcap_test main.o -lpcap
 
 main.o:
 	gcc -g -c -o main.o main.c
