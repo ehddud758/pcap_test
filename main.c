@@ -100,8 +100,8 @@ int main(int argc, char* argv[])
   	while (1) 
 	{
    		struct pcap_pkthdr* header;
-    	const u_char* packet;
-    	int res = pcap_next_ex(handle, &header, &packet);
+	    	const u_char* packet;
+	    	int res = pcap_next_ex(handle, &header, &packet);
     		
 		if (res == 0) continue;
 		if (res == -1 || res == -2) break;
